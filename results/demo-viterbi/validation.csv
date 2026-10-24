@@ -1,0 +1,8 @@
+k,metric,validation_score
+0,macro tagging accuracy (mean_sentence_token_accuracy),1.0
+1e-05,macro tagging accuracy (mean_sentence_token_accuracy),1.0
+0.0001,macro tagging accuracy (mean_sentence_token_accuracy),1.0
+0.001,macro tagging accuracy (mean_sentence_token_accuracy),1.0
+0.01,macro tagging accuracy (mean_sentence_token_accuracy),1.0
+0.1,macro tagging accuracy (mean_sentence_token_accuracy),1.0
+1,macro tagging accuracy (mean_sentence_token_accuracy),1.0

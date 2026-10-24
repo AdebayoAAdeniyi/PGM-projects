@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pgm-sequence-modelling-portfolio"
+version = "0.1.0"
+description = "Supervised HMMs, joint probability estimation, Viterbi decoding and POS evaluation"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.6"]
+
+[tool.setuptools.packages.find]
+include = ["pgm_portfolio*"]

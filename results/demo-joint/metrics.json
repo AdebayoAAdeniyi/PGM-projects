@@ -1,0 +1,62 @@
+{
+  "dataset": {
+    "training_sentences": 200,
+    "development_sentences": 40,
+    "test_sentences": 40,
+    "vocabulary_size": 14,
+    "tag_count": 6
+  },
+  "objective": "joint",
+  "selection_metric": "mean joint log probability",
+  "validation_trials": [
+    {
+      "k": 1e-05,
+      "metric": "mean joint log probability",
+      "validation_score": -3.829698186571902
+    },
+    {
+      "k": 0.0001,
+      "metric": "mean joint log probability",
+      "validation_score": -3.829745684706039
+    },
+    {
+      "k": 0.001,
+      "metric": "mean joint log probability",
+      "validation_score": -3.8302206264456116
+    },
+    {
+      "k": 0.01,
+      "metric": "mean joint log probability",
+      "validation_score": -3.8349660885565617
+    },
+    {
+      "k": 0.1,
+      "metric": "mean joint log probability",
+      "validation_score": -3.882029999830132
+    },
+    {
+      "k": 1,
+      "metric": "mean joint log probability",
+      "validation_score": -4.3177722598451584
+    }
+  ],
+  "selected_k": 1e-05,
+  "test_mean_joint_log_probability": -3.6703264464759995,
+  "random_tag_mean_joint_log_probability": -84.9215130786917,
+  "test_hmm": {
+    "token_accuracy": 1.0,
+    "mean_sentence_token_accuracy": 1.0,
+    "sentence_accuracy": 1.0,
+    "sentences": 40,
+    "tokens": 139
+  },
+  "test_frequency_baseline": {
+    "token_accuracy": 1.0,
+    "mean_sentence_token_accuracy": 1.0,
+    "sentence_accuracy": 1.0,
+    "sentences": 40,
+    "tokens": 139
+  },
+  "random_seed": 2024,
+  "provenance": "Computed on the named input corpus. The vocabulary is rebuilt from the training split alone, so unseen evaluation words map to <UNK> and no test information reaches the model."
+}

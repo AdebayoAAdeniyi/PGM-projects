@@ -1,0 +1,67 @@
+{
+  "dataset": {
+    "training_sentences": 200,
+    "development_sentences": 40,
+    "test_sentences": 40,
+    "vocabulary_size": 14,
+    "tag_count": 6
+  },
+  "objective": "token",
+  "selection_metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+  "validation_trials": [
+    {
+      "k": 0,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 1.0
+    },
+    {
+      "k": 1e-05,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 1.0
+    },
+    {
+      "k": 0.0001,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 1.0
+    },
+    {
+      "k": 0.001,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 1.0
+    },
+    {
+      "k": 0.01,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 1.0
+    },
+    {
+      "k": 0.1,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 1.0
+    },
+    {
+      "k": 1,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 1.0
+    }
+  ],
+  "selected_k": 0,
+  "test_mean_joint_log_probability": -3.6703215344285,
+  "random_tag_mean_joint_log_probability": "-Infinity",
+  "test_hmm": {
+    "token_accuracy": 1.0,
+    "mean_sentence_token_accuracy": 1.0,
+    "sentence_accuracy": 1.0,
+    "sentences": 40,
+    "tokens": 139
+  },
+  "test_frequency_baseline": {
+    "token_accuracy": 1.0,
+    "mean_sentence_token_accuracy": 1.0,
+    "sentence_accuracy": 1.0,
+    "sentences": 40,
+    "tokens": 139
+  },
+  "random_seed": 2024,
+  "provenance": "Computed on the named input corpus. The vocabulary is rebuilt from the training split alone, so unseen evaluation words map to <UNK> and no test information reaches the model."
+}

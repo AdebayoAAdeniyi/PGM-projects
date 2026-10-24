@@ -1,0 +1,7 @@
+k,metric,validation_score
+1e-05,mean joint log probability,-3.829698186571902
+0.0001,mean joint log probability,-3.829745684706039
+0.001,mean joint log probability,-3.8302206264456116
+0.01,mean joint log probability,-3.8349660885565617
+0.1,mean joint log probability,-3.882029999830132
+1,mean joint log probability,-4.3177722598451584

@@ -1,0 +1,67 @@
+{
+  "dataset": {
+    "training_sentences": 38217,
+    "development_sentences": 3251,
+    "test_sentences": 3506,
+    "vocabulary_size": 37101,
+    "tag_count": 36
+  },
+  "objective": "token",
+  "selection_metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+  "validation_trials": [
+    {
+      "k": 0,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": "-Infinity"
+    },
+    {
+      "k": 1e-05,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 0.9396700668646347
+    },
+    {
+      "k": 0.0001,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 0.9396806736805746
+    },
+    {
+      "k": 0.001,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 0.9395644615323571
+    },
+    {
+      "k": 0.01,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 0.9398313727518465
+    },
+    {
+      "k": 0.1,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 0.9371494254783472
+    },
+    {
+      "k": 1,
+      "metric": "macro tagging accuracy (mean_sentence_token_accuracy)",
+      "validation_score": 0.9165179047847846
+    }
+  ],
+  "selected_k": 0.01,
+  "test_mean_joint_log_probability": -129.43554751738608,
+  "random_tag_mean_joint_log_probability": -366.4864571100357,
+  "test_hmm": {
+    "token_accuracy": 0.941421259663138,
+    "mean_sentence_token_accuracy": 0.9366800859818618,
+    "sentence_accuracy": 0.40188248716486025,
+    "sentences": 3506,
+    "tokens": 65843
+  },
+  "test_frequency_baseline": {
+    "token_accuracy": 0.9054872955363517,
+    "mean_sentence_token_accuracy": 0.9008785269690696,
+    "sentence_accuracy": 0.2316029663434113,
+    "sentences": 3506,
+    "tokens": 65843
+  },
+  "random_seed": 2024,
+  "provenance": "Computed on the named input corpus. The vocabulary is rebuilt from the training split alone, so unseen evaluation words map to <UNK> and no test information reaches the model."
+}
